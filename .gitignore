@@ -1,0 +1,17 @@
+# Vendor dependencies - ignore all by default...
+vendor
+
+# Tests - local config files
+codeception.yml
+tests/*.suite.yml
+.env.local
+
+# Tests - local output files
+tests/_output
+
+# General Purpose Ingored Files
+.DS_Store
+.idea
+node_modules
+compiler.jar
+*.ps1

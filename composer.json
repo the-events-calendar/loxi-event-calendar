@@ -1,0 +1,25 @@
+{
+  "name": "moderntribe/loxi-wordpress-plugin",
+  "description": "The Loxi WordPress plugin by Modern Tribe",
+  "type": "wordpress-plugin",
+  "keywords": [
+    "wordpress",
+    "events"
+  ],
+  "homepage": "https://loxi.io/",
+  "license": "GPL-2.0",
+  "require-dev": {
+    "codeception/codeception": "~2.2.12",
+    "lucatume/wp-browser": "~1.20.1",
+    "mikey179/vfsStream": "^1.6",
+    "vlucas/phpdotenv": "^2.4",
+    "spatie/phpunit-snapshot-assertions": "^1.2"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": "dist"
+  },
+  "require": {
+  }
+}
