@@ -50,10 +50,18 @@ class Tribe__Loxi__Shortcode {
 			'show-search-filter'    => null,
 			'show-view-switcher'    => null,
 			'subdomain'             => null,
+			'calendar'              => null,
 			'venue'                 => null,
 		);
 
 		$attributes = shortcode_atts( $defaults, $attributes, self::SHORTCODE_TAG );
+
+		// Alias calendar to subdomain
+		if ( ! empty( $attributes['calendar'] ) ) {
+			$attributes['subdomain'] = $attributes['calendar'];
+
+			unset( $attributes['calendar'] );
+		}
 
 		if ( empty( $attributes['subdomain'] ) ) {
 			return '';

@@ -61,6 +61,21 @@ class ShortcodeTest extends WPTestCase {
 	}
 
 	/**
+	 * It should render the [loxi] shortcode using calendar
+	 *
+	 * @test
+	 */
+	public function it_should_render_the_loxi_shortcode_using_calendar() {
+		Tribe__Loxi__Shortcode::register();
+
+		$output = do_shortcode( '[loxi calendar="awesome"]' );
+
+        $this->assertMatchesSnapshot( $output, $this->driver );
+
+        $this->assertContains( 'https://awesome.loxi.io', $output );
+	}
+
+	/**
 	 * It should render the [loxi] shortcode with unsupported attributes
 	 *
 	 * @test
