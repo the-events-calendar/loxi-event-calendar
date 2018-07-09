@@ -76,6 +76,7 @@ if ( ! class_exists( 'Tribe__Loxi__Main' ) ) {
 			}
 
 			// Add oembed provider.
+			wp_oembed_add_provider( 'https://*.' . $loxi_domain, 'https://' . $loxi_domain . '/api/saas/v1/oembed' );
 			wp_oembed_add_provider( 'https://*.' . $loxi_domain . '/*', 'https://' . $loxi_domain . '/api/saas/v1/oembed' );
 
 		}
