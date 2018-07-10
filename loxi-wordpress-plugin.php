@@ -2,7 +2,7 @@
 /*
 Plugin Name: Loxi WordPress Plugin
 Description: Loxi is awesome.
-Version: 0.1
+Version: 1.0.0
 Author: Modern Tribe, Inc.
 Author URI: https://loxi.io
 Text Domain: loxi-wordpress-plugin

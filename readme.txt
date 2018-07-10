@@ -2,11 +2,11 @@
 
 Contributors: ModernTribe, sc0ttkclark
 Tags:
-Donate link: http://loxi.io
+Donate link: https://loxi.io
 Requires at least: 4.5
-Stable tag: 4.6.17
-Tested up to: 4.9.6
-Requires PHP: 5.2.4
+Stable tag: 1.0.0
+Tested up to: 4.9.7
+Requires PHP: 5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
