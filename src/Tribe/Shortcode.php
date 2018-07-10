@@ -5,7 +5,7 @@
 
 // Don't load directly
 if ( ! defined( 'ABSPATH' ) ) {
-	die( '-1' );
+	return;
 }
 
 /**
@@ -41,7 +41,8 @@ class Tribe__Loxi__Shortcode {
 	public static function render( $attributes = array() ) {
 
 		$defaults = array(
-			'categories'            => null,
+			'calendar'              => null,
+			'subdomain'             => null,
 			'color'                 => null,
 			'default-layout'        => null,
 			'show-category-filter'  => null,
@@ -49,8 +50,7 @@ class Tribe__Loxi__Shortcode {
 			'show-location-filter'  => null,
 			'show-search-filter'    => null,
 			'show-view-switcher'    => null,
-			'subdomain'             => null,
-			'calendar'              => null,
+			'categories'            => null,
 			'venue'                 => null,
 		);
 
@@ -67,11 +67,11 @@ class Tribe__Loxi__Shortcode {
 			return '';
 		}
 
-		$loxi_domain = 'loxi.io';
+		$loxi_domain = Tribe__Loxi__Main::DOMAIN;
 
 		// Set special domain if we are testing.
 		if ( defined( 'TRIBE_LOXI_SUBDOMAIN' ) && TRIBE_LOXI_SUBDOMAIN ) {
-			$loxi_domain = sanitize_key( TRIBE_LOXI_SUBDOMAIN ) . '.loxi.io';
+			$loxi_domain = sanitize_key( TRIBE_LOXI_SUBDOMAIN ) . '.' . $loxi_domain;
 		}
 
 		$subdomain_url = sprintf(
@@ -132,21 +132,21 @@ class Tribe__Loxi__Shortcode {
 	}
 
 	/**
-	 * Build HTML tag attributes from an array of attribute values.
+	 * Build HTML data attributes from an array of attribute values.
 	 *
-	 * @param array $attributes Attributes to render as HTML tag attributes.
+	 * @param array $data_attributes Attributes to render as HTML data attributes.
 	 *
-	 * @return array HTML tag attributes.
+	 * @return array HTML data attributes.
 	 *
 	 * @since TBD
 	 */
-	public static function build_html_attributes( $attributes = array() ) {
+	public static function build_html_attributes( $data_attributes = array() ) {
 
 		$html_attributes = array(
 			'class="loxi"',
 		);
 
-		foreach ( $attributes as $attribute => $value ) {
+		foreach ( $data_attributes as $attribute => $value ) {
 			// Skip null values.
 			if ( null === $value ) {
 				continue;
@@ -161,8 +161,9 @@ class Tribe__Loxi__Shortcode {
 				continue;
 			}
 
+			// Add attributes as data attributes.
 			$html_attributes[] = sprintf(
-				'%1$s="%2$s"',
+				'data-%1$s="%2$s"',
 				sanitize_title( $attribute ),
 				esc_attr( $value )
 			);
