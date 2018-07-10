@@ -5,82 +5,83 @@
 
 // Don't load directly
 if ( ! defined( 'ABSPATH' ) ) {
-	die( '-1' );
+	return;
 }
 
-if ( ! class_exists( 'Tribe__Loxi__Main' ) ) {
+/**
+ * Main Tribe Loxi class.
+ */
+class Tribe__Loxi__Main {
 
 	/**
-	 * Main Tribe Loxi class.
+	 * Version number.
 	 */
-	class Tribe__Loxi__Main {
+	const VERSION = '0.1.0';
 
-		/**
-		 * Version number.
-		 */
-		const VERSION = '0.1.0';
+	/**
+	 * Domain name.
+	 */
+	const DOMAIN = 'loxi.io';
 
-		/**
-		 * Static Singleton Holder
-		 *
-		 * @var self
-		 */
-		protected static $instance;
+	/**
+	 * Static Singleton Holder
+	 *
+	 * @var self
+	 */
+	protected static $instance;
 
-		/**
-		 * Get (and instantiate, if necessary) the instance of the class
-		 *
-		 * @return self
-		 *
-		 * @since TBD
-		 */
-		public static function instance() {
+	/**
+	 * Get (and instantiate, if necessary) the instance of the class
+	 *
+	 * @return self
+	 *
+	 * @since TBD
+	 */
+	public static function instance() {
 
-			if ( ! self::$instance ) {
-				self::$instance = new self;
-			}
-
-			return self::$instance;
-
+		if ( ! self::$instance ) {
+			self::$instance = new self;
 		}
 
-		/**
-		 * Set up WordPress hooks/actions.
-		 *
-		 * @since TBD
-		 */
-		protected function __construct() {
-
-			add_action( 'init', array( $this, 'init' ) );
-
-		}
-
-		/**
-		 * Initialize plugin functionality.
-		 *
-		 * @since TBD
-		 */
-		public function init() {
-
-			require_once TRIBE_LOXI_PLUGIN_DIR . '/src/Tribe/Shortcode.php';
-
-			// Register shortcode.
-			Tribe__Loxi__Shortcode::register();
-
-			// Get oembed loxi domain.
-			$loxi_domain = 'loxi.io';
-
-			// Set special domain if we are testing.
-			if ( defined( 'TRIBE_LOXI_SUBDOMAIN' ) && TRIBE_LOXI_SUBDOMAIN ) {
-				$loxi_domain = sanitize_key( TRIBE_LOXI_SUBDOMAIN ) . '.loxi.io';
-			}
-
-			// Add oembed provider.
-			wp_oembed_add_provider( 'https://*.' . $loxi_domain, 'https://' . $loxi_domain . '/api/saas/v1/oembed' );
-			wp_oembed_add_provider( 'https://*.' . $loxi_domain . '/*', 'https://' . $loxi_domain . '/api/saas/v1/oembed' );
-
-		}
+		return self::$instance;
 
 	}
 
-} // end if !class_exists Tribe__Loxi__Main
+	/**
+	 * Set up WordPress hooks/actions.
+	 *
+	 * @since TBD
+	 */
+	protected function __construct() {
+
+		add_action( 'init', array( $this, 'init' ) );
+
+	}
+
+	/**
+	 * Initialize plugin functionality.
+	 *
+	 * @since TBD
+	 */
+	public function init() {
+
+		require_once TRIBE_LOXI_PLUGIN_DIR . '/src/Tribe/Shortcode.php';
+
+		// Register shortcode.
+		Tribe__Loxi__Shortcode::register();
+
+		// Get oembed loxi domain.
+		$loxi_domain = self::DOMAIN;
+
+		// Set special domain if we are testing.
+		if ( defined( 'TRIBE_LOXI_SUBDOMAIN' ) && TRIBE_LOXI_SUBDOMAIN ) {
+			$loxi_domain = sanitize_key( TRIBE_LOXI_SUBDOMAIN ) . '.' . $loxi_domain;
+		}
+
+		// Add oembed provider.
+		wp_oembed_add_provider( 'https://*.' . $loxi_domain, 'https://' . $loxi_domain . '/api/saas/v1/oembed' );
+		wp_oembed_add_provider( 'https://*.' . $loxi_domain . '/*', 'https://' . $loxi_domain . '/api/saas/v1/oembed' );
+
+	}
+
+	}
