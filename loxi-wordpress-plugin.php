@@ -27,12 +27,14 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
+if ( class_exists( 'Tribe__Loxi__Main' ) ) {
+	return;
+}
+
 define( 'TRIBE_LOXI_PLUGIN_FILE', __FILE__ );
 define( 'TRIBE_LOXI_PLUGIN_DIR', __DIR__ );
 
 // The main plugin class.
 require_once TRIBE_LOXI_PLUGIN_DIR . '/src/Tribe/Main.php';
 
-if ( class_exists( 'Tribe__Loxi__Main' ) ) {
-	Tribe__Loxi__Main::instance();
-}
+Tribe__Loxi__Main::instance();
