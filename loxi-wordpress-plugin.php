@@ -30,7 +30,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 define( 'TRIBE_LOXI_PLUGIN_FILE', __FILE__ );
 define( 'TRIBE_LOXI_PLUGIN_DIR', __DIR__ );
 
-// the main plugin class
+// The main plugin class.
 require_once TRIBE_LOXI_PLUGIN_DIR . '/src/Tribe/Main.php';
 
 if ( class_exists( 'Tribe__Loxi__Main' ) ) {
