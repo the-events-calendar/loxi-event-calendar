@@ -101,4 +101,4 @@ before_script:
   - sudo service nginx restart
 
 script:
-  - codecept run integration
+  - codecept run wpunit
