@@ -10,16 +10,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Main Tribe Loxi class.
+ *
+ * @since TBD
  */
 class Tribe__Loxi__Main {
 
 	/**
 	 * Version number.
+	 *
+	 * @since TBD
 	 */
 	const VERSION = '0.1.0';
 
 	/**
 	 * Domain name.
+	 *
+	 * @since TBD
 	 */
 	const DOMAIN = 'loxi.io';
 
@@ -27,6 +33,8 @@ class Tribe__Loxi__Main {
 	 * Static Singleton Holder
 	 *
 	 * @var self
+	 *
+	 * @since TBD
 	 */
 	protected static $instance;
 
@@ -84,4 +92,4 @@ class Tribe__Loxi__Main {
 
 	}
 
-	}
+}

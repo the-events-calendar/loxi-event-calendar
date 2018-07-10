@@ -10,11 +10,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Loxi Shortcode Class.
+ *
+ * @since TBD
  */
 class Tribe__Loxi__Shortcode {
 
 	/**
 	 * Shortcode tag for this shortcode.
+	 *
+	 * @since TBD
 	 */
 	const SHORTCODE_TAG = 'loxi';
 
