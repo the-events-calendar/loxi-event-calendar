@@ -11,21 +11,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Loxi Shortcode Class.
  *
- * @since 1.0.0
+ * @since 1.0
  */
 class Tribe__Loxi__Shortcode {
 
 	/**
 	 * Shortcode tag for this shortcode.
 	 *
-	 * @since 1.0.0
+	 * @since 1.0
 	 */
 	const SHORTCODE_TAG = 'loxi';
 
 	/**
 	 * Register shortcode.
 	 *
-	 * @since 1.0.0
+	 * @since 1.0
 	 */
 	public static function register() {
 
@@ -40,7 +40,7 @@ class Tribe__Loxi__Shortcode {
 	 *
 	 * @return string
 	 *
-	 * @since 1.0.0
+	 * @since 1.0
 	 */
 	public static function render( $attributes = array() ) {
 
@@ -127,7 +127,7 @@ class Tribe__Loxi__Shortcode {
 		 * @param array  $attributes      Shortcode attributes.
 		 * @param array  $html_attributes Attributes to render as HTML tag attributes.
 		 *
-		 * @since 1.0.0
+		 * @since 1.0
 		 */
 		$output = apply_filters( 'tribe_loxi_shortcode_output', $output, $attributes, $html_attributes );
 
@@ -142,7 +142,7 @@ class Tribe__Loxi__Shortcode {
 	 *
 	 * @return array HTML data attributes.
 	 *
-	 * @since 1.0.0
+	 * @since 1.0
 	 */
 	public static function build_html_attributes( $data_attributes = array() ) {
 

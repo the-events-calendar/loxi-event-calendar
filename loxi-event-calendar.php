@@ -2,7 +2,7 @@
 /*
 Plugin Name: Loxi Event Calendar
 Description: Loxi is a fully-hosted events calendar that makes it easy to publish events and display them on your WordPress site. Connect, publish and embed with a shortcode.
-Version: 1.0.0
+Version: 1.0
 Author: Modern Tribe, Inc.
 Author URI: https://loxi.io
 Text Domain: loxi-event-calendar

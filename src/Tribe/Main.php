@@ -11,21 +11,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Main Tribe Loxi class.
  *
- * @since 1.0.0
+ * @since 1.0
  */
 class Tribe__Loxi__Main {
 
 	/**
 	 * Version number.
 	 *
-	 * @since 1.0.0
+	 * @since 1.0
 	 */
-	const VERSION = '1.0.0';
+	const VERSION = '1.0';
 
 	/**
 	 * Domain name.
 	 *
-	 * @since 1.0.0
+	 * @since 1.0
 	 */
 	const DOMAIN = 'loxi.io';
 
@@ -34,7 +34,7 @@ class Tribe__Loxi__Main {
 	 *
 	 * @var self
 	 *
-	 * @since 1.0.0
+	 * @since 1.0
 	 */
 	protected static $instance;
 
@@ -43,7 +43,7 @@ class Tribe__Loxi__Main {
 	 *
 	 * @return self
 	 *
-	 * @since 1.0.0
+	 * @since 1.0
 	 */
 	public static function instance() {
 
@@ -58,7 +58,7 @@ class Tribe__Loxi__Main {
 	/**
 	 * Set up WordPress hooks/actions.
 	 *
-	 * @since 1.0.0
+	 * @since 1.0
 	 */
 	protected function __construct() {
 
@@ -69,7 +69,7 @@ class Tribe__Loxi__Main {
 	/**
 	 * Initialize plugin functionality.
 	 *
-	 * @since 1.0.0
+	 * @since 1.0
 	 */
 	public function init() {
 
