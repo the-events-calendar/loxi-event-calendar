@@ -69,7 +69,7 @@ before_script:
   - cd $WP_ROOT_FOLDER
   - wp core download --version=$WP_VERSION
   - wp config create --dbname="$DB_NAME" --dbuser="root" --dbpass="" --dbhost="127.0.0.1" --dbprefix="$WP_TABLE_PREFIX"
-  - wp core install --url="$WP_URL" --title="TEC Tests" --admin_user="$WP_ADMIN_USERNAME" --admin_password="$WP_ADMIN_PASSWORD" --admin_email="admin@$WP_DOMAIN" --skip-email
+  - wp core install --url="$WP_URL" --title="Loxi WordPress Plugin Tests" --admin_user="$WP_ADMIN_USERNAME" --admin_password="$WP_ADMIN_PASSWORD" --admin_email="admin@$WP_DOMAIN" --skip-email
 
   # get back to the build folder
   - cd $TRAVIS_BUILD_DIR
@@ -83,12 +83,12 @@ before_script:
   - sudo ln -s /etc/nginx/sites-available/$WP_DOMAIN /etc/nginx/sites-enabled/
 
   # move the plugin into WordPress folder
-  - mv $TRAVIS_BUILD_DIR $WP_ROOT_FOLDER/wp-content/plugins/the-events-calendar
-  - export PLUGIN_DIR="$WP_ROOT_FOLDER/wp-content/plugins/the-events-calendar"
+  - mv $TRAVIS_BUILD_DIR $WP_ROOT_FOLDER/wp-content/plugins/loxi-event-calendar
+  - export PLUGIN_DIR="$WP_ROOT_FOLDER/wp-content/plugins/loxi-event-calendar"
 
   # activate the plugin in WordPress
   - cd $WP_ROOT_FOLDER
-  - wp plugin activate loxi-wordpress-plugin
+  - wp plugin activate loxi-event-calendar
 
   # export a dump of the just installed database to the _data folder
   - wp db export $PLUGIN_DIR/tests/_data/dump.sql
@@ -101,4 +101,4 @@ before_script:
   - sudo service nginx restart
 
 script:
-  - codecept run integration
+  - codecept run wpunit

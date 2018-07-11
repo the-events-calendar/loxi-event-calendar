@@ -1,5 +1,5 @@
 {
-  "name": "moderntribe/loxi-wordpress-plugin",
+  "name": "moderntribe/loxi-event-calendar",
   "description": "The Loxi WordPress plugin by Modern Tribe",
   "type": "wordpress-plugin",
   "keywords": [
@@ -9,8 +9,7 @@
   "homepage": "https://loxi.io/",
   "license": "GPL-2.0",
   "require-dev": {
-    "codeception/codeception": "~2.2.12",
-    "lucatume/wp-browser": "~1.20.1",
+    "lucatume/wp-browser": "~2.1",
     "mikey179/vfsStream": "^1.6",
     "vlucas/phpdotenv": "^2.4",
     "spatie/phpunit-snapshot-assertions": "^1.2"
