@@ -1,0 +1,6 @@
+[
+  "loxi-event-calendar.php",
+  "src/**/*",
+  "license.txt",
+  "readme.txt",
+]
