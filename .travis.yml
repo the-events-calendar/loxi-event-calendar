@@ -83,12 +83,12 @@ before_script:
   - sudo ln -s /etc/nginx/sites-available/$WP_DOMAIN /etc/nginx/sites-enabled/
 
   # move the plugin into WordPress folder
-  - mv $TRAVIS_BUILD_DIR $WP_ROOT_FOLDER/wp-content/plugins/loxi-wordpress-plugin
-  - export PLUGIN_DIR="$WP_ROOT_FOLDER/wp-content/plugins/loxi-wordpress-plugin"
+  - mv $TRAVIS_BUILD_DIR $WP_ROOT_FOLDER/wp-content/plugins/loxi-event-calendar
+  - export PLUGIN_DIR="$WP_ROOT_FOLDER/wp-content/plugins/loxi-event-calendar"
 
   # activate the plugin in WordPress
   - cd $WP_ROOT_FOLDER
-  - wp plugin activate loxi-wordpress-plugin
+  - wp plugin activate loxi-event-calendar
 
   # export a dump of the just installed database to the _data folder
   - wp db export $PLUGIN_DIR/tests/_data/dump.sql

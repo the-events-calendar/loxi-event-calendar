@@ -17,6 +17,6 @@ modules:
             adminEmail: admin@%WP_DOMAIN%
             title: 'Loxi WordPress Plugin Tests'
             plugins:
-                - loxi-wordpress-plugin/loxi-wordpress-plugin.php
+                - loxi-event-calendar/loxi-event-calendar.php
             activatePlugins:
-                - loxi-wordpress-plugin/loxi-wordpress-plugin.php
+                - loxi-event-calendar/loxi-event-calendar.php

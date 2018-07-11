@@ -87,9 +87,9 @@ class Tribe__Loxi__Shortcode {
 		$html_attributes = self::build_html_attributes( $attributes );
 
 		// translators: View more events on Loxi.io
-		$loxi_text = esc_html_x( '%1$s on %2$s', 'View more events on Loxi.io', 'loxi-wordpress-plugin' );
+		$loxi_text = esc_html_x( '%1$s on %2$s', 'View more events on Loxi.io', 'loxi-event-calendar' );
 
-		$view_more_text = __( 'View more events', 'loxi-wordpress-plugin' );
+		$view_more_text = __( 'View more events', 'loxi-event-calendar' );
 
 		// Build view more text link.
 		$view_more_text_link = sprintf(

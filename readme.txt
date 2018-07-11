@@ -1,11 +1,11 @@
 ===Loxi Event Calendar===
 
-Contributors: loxi, ModernTribe, sc0ttkclark, nealfennimore, GeoffBel, geoffgraham, zbtirrell
+Contributors: ModernTribe, sc0ttkclark, nealfennimore, GeoffBel, geoffgraham, zbtirrell
 Tags: events, calendar, event, loxi, month, hosted, embed, shortcode, venue, organizer, dates, date, recurring, repeat, google maps, conference, workshop, concert, meeting, seminar, summit, class, modern tribe, tribe, widget
-Requires at least: 4.5
+Requires at least: 4.8
 Stable tag: 1.0
 Tested up to: 4.9.7
-Requires PHP: 5.3
+Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -85,11 +85,11 @@ Yes, you definitely need to [sign up for a Loxi account](https://www.loxi.io/) t
 
 = Shortcode Examples =
 
-The default shortcode to embed your Loxi calendar is: `[loxi calendar]`.
+The default shortcode to embed your Loxi calendar is: `[loxi calendar="my-awesome-calendar"]`.
 
 Customize the appearance of the calendar with any of the following:
 
-* `calendar`: Your calendar ID (e.g. `my-awesome-calendar`)
+* `calendar`: Your calendar ID (e.g. `my-awesome-calendar` if your calendar URL is `https://my-awesome-calendar.loxi.io`)
 * `view`: Accepts `month` or `list`
 * `color`: Sets the primary color of the calendar with a hex value (e.g. #ff9800)
 * `timezone`: Sets the default timezone for events
@@ -100,7 +100,7 @@ Customize the appearance of the calendar with any of the following:
 
 An orange calendar that displays the month view with the view switcher disabled would be:
 
-[loxi calendar=“my-awesome-calendar” view=“month” color=“#ff9800” view-switcher=“false”]
+`[loxi calendar="my-awesome-calendar" view="month" color="#ff9800" view-switcher="false"]`
 
 ...where `my-awesome-calendar` is the ID of your calendar or the calendar you want to embed.
 
@@ -114,7 +114,7 @@ Have questions about Loxi’s service or your account? Please visit our [Help Ce
 
 = 1.0.0 - [TBD] =
 
-Our very first release -- virtual high fives! 
+Our very first release -- virtual high fives!
 
 (... um, we can tell when you don’t virtual high five us back.)
 
