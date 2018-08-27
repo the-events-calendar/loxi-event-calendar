@@ -99,7 +99,7 @@ Customize the appearance of the calendar with any of the following:
 
 An orange calendar that displays the month view with the view switcher disabled would be:
 
-`[loxi calendar="my-awesome-calendar" view="month" color="#ff9800" view-switcher="false"]`
+`[loxi calendar="my-awesome-calendar" default-layout="month" color="#ff9800" show-view-switcher="0"]`
 
 ...where `my-awesome-calendar` is the ID of your calendar or the calendar you want to embed.
 
