@@ -90,13 +90,12 @@ The default shortcode to embed your Loxi calendar is: `[loxi calendar="my-awesom
 Customize the appearance of the calendar with any of the following:
 
 * `calendar`: Your calendar ID (e.g. `my-awesome-calendar` if your calendar URL is `https://my-awesome-calendar.loxi.io`)
-* `view`: Accepts `month` or `list`
-* `color`: Sets the primary color of the calendar with a hex value (e.g. #ff9800)
-* `timezone`: Sets the default timezone for events
-* `search`: Set to `true` to show the keyword search and `false` to hide it
-* `category-filter`: Set to `true` to show the category filter dropdown and `false` to hide it
-* `location-filter`: Set to `true` to show the location filter dropdown and `false` to hide it
-* `view-switcher`: Set to `true` to allow visitors to switch views and `false` to disable it
+* `default-layout`: Accepts `month` or `list`
+* `color`: Sets the primary color of the calendar with a hex value (e.g. `#ff9800`)
+* `show-search-filter`: Set to `1` to show the keyword search and `0` to hide it
+* `show-category-filter`: Set to `1` to show the category filter dropdown and `0` to hide it
+* `show-location-filter`: Set to `1` to show the location filter dropdown and `0` to hide it
+* `show-view-switcher`: Set to `1` to allow visitors to switch views and `0` to disable it
 
 An orange calendar that displays the month view with the view switcher disabled would be:
 
@@ -112,7 +111,7 @@ Have questions about Loxi’s service or your account? Please visit our [Help Ce
 
 == Changelog ==
 
-= 1.0.0 - [TBD] =
+= 1.0.0 - July 17th, 2018 =
 
 Our very first release -- virtual high fives!
 
