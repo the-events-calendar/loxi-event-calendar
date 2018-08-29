@@ -4,7 +4,7 @@ Contributors: ModernTribe, sc0ttkclark, nealfennimore, GeoffBel, geoffgraham, zb
 Tags: events, calendar, event, loxi, month, hosted, embed, shortcode, venue, organizer, dates, date, recurring, repeat, google maps, conference, workshop, concert, meeting, seminar, summit, class, modern tribe, tribe, widget
 Requires at least: 4.8
 Stable tag: 1.0
-Tested up to: 4.9.7
+Tested up to: 4.9.8
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,18 +15,18 @@ Loxi is a fully-hosted events calendar that makes it easy to publish events and 
 
 [Loxi](https://loxi.io) is an event calendar that can be displayed anywhere. Publish events to a beautiful, responsive calendar and use it anywhere on an unlimited number of sites. This plugin lets you embed your Loxi calendar on any WordPress page or post with a simple shortcode.
 
-Loxi is lovingly handcrafted and maintained by [Modern Tribe](https://tri.be), the creators of [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/). We’ve applied our many years of experience developing the most widely used WordPress calendar plugin to make a beautiful online calendar that works anywhere.
+Loxi is lovingly handcrafted and maintained by [Modern Tribe](https://tri.be), the creators of [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/). We've applied our many years of experience developing the most widely used WordPress calendar plugin to make a beautiful online calendar that works anywhere.
 
-[Create your Loxi account today!](https://loxi.io/signup) It’s free to try and one flat monthly fee from there. That’s it. No shenanigans.
+[Create your Loxi account today!](https://loxi.io/signup) It's free to try and one flat monthly fee from there. That's it. No shenanigans.
 
 = Build Your Perfect Calendar in Minutes =
 
-Loxi takes all of the work out of creating events and is delightfully simple to set up. There’s no coding required, no theme conflicts to worry about, it looks like a million bucks right out of the box, AND it works on all devices. Spend less time configuring and more time promoting your events!
+Loxi takes all of the work out of creating events and is delightfully simple to set up. There's no coding required, no theme conflicts to worry about, it looks like a million bucks right out of the box, AND it works on all devices. Spend less time configuring and more time promoting your events!
 
 = An Online Calendar That Scales With You =
 
 
-Loxi is a fully-hosted calendar, meaning you never have to worry about overloading your WordPress database. Your Loxi calendar can hold as many events as you need and lets you publish an unlimited number of events. That’s right, go ahead and create events freely and let Loxi carry the load while you enjoy the speed and performance of our servers, regardless of how many events you host.
+Loxi is a fully-hosted calendar, meaning you never have to worry about overloading your WordPress database. Your Loxi calendar can hold as many events as you need and lets you publish an unlimited number of events. That's right, go ahead and create events freely and let Loxi carry the load while you enjoy the speed and performance of our servers, regardless of how many events you host.
 
 = Your Events are Always Backed Up and Safe =
 
@@ -34,14 +34,14 @@ Your calendar is always online and available to view, even if your site goes dow
 
 = Take Your Events With You Anywhere =
 
-Sure, it’s great to have your calendar on your WordPress site, but what if you want to display it on other WordPress sites? Or non-WordPress sites? Loxi lets you take your calendar and events anywhere. Publish once and promote infinitely!
+Sure, it's great to have your calendar on your WordPress site, but what if you want to display it on other WordPress sites? Or non-WordPress sites? Loxi lets you take your calendar and events anywhere. Publish once and promote infinitely!
 
 = Loxi Features =
 
 * **Repeat events:** Create daily, weekly, monthly, or yearly repeating events
 * **Import events:**Auto-add events from Google, Outlook, iCalendar and more
 * **Unlimited events:** Add as many events as you want with no limits
-* **Multiple views:* Includes a month and list view featuring clean, uncluttered design
+* **Multiple views:** Includes a month and list view featuring clean, uncluttered design
 * **Search and filters:** Visitors can find events by keyword, location, or category
 * **Saved details:** Store key information like venues and organizers for quick access and updates
 * **Mobile-friendly:** Month View and List View look great on any screen
@@ -107,7 +107,7 @@ An orange calendar that displays the month view with the view switcher disabled 
 
 Right here in the WordPress forums! Our team is on hand and happy to help with any questions you have about this plugin and setting it up.
 
-Have questions about Loxi’s service or your account? Please visit our [Help Center](https://support.loxi.io/) for those and other things not directly related to this plugin or WordPress. That will make sure you get the help you need and that we’re following WordPress support guidelines. :)
+Have questions about Loxi's service or your account? Please visit our [Help Center](https://support.loxi.io/) for those and other things not directly related to this plugin or WordPress. That will make sure you get the help you need and that we're following WordPress support guidelines. :)
 
 == Changelog ==
 
@@ -115,7 +115,7 @@ Have questions about Loxi’s service or your account? Please visit our [Help Ce
 
 Our very first release -- virtual high fives!
 
-(... um, we can tell when you don’t virtual high five us back.)
+(... um, we can tell when you don't virtual high five us back.)
 
 * New: Embed your Loxi calendar with a shortcode
 * New: A slew of parameters that can be used to customize the calendar appearance, like color, default view, and animal style. Whoops, that last one was my In-N-Out order.
