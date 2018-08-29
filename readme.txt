@@ -39,7 +39,7 @@ Sure, it's great to have your calendar on your WordPress site, but what if you w
 = Loxi Features =
 
 * **Repeat events:** Create daily, weekly, monthly, or yearly repeating events
-* **Import events:**Auto-add events from Google, Outlook, iCalendar and more
+* **Import events:** Auto-add events from Google, Outlook, iCalendar and more
 * **Unlimited events:** Add as many events as you want with no limits
 * **Multiple views:** Includes a month and list view featuring clean, uncluttered design
 * **Search and filters:** Visitors can find events by keyword, location, or category
